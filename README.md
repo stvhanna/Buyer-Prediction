@@ -25,17 +25,17 @@ The Session ID in yoochoose-buys.dat will always exist in the yoochoose-clicks.d
 
 data_extraction:
 	We used Hadoop-MapReduce to get following information from the data .
-	Some of the Features extracted are 
-	1. buy/click ratio of the session <br />
-	2. number of clicks in the session <br />
-	3. day of the week of the session first click <br />
-	4. hour of the day of the session first click <br />
-	5. number of clicks made on the maximum clicked item of the session <br />
-	6. max time between two consecutive clicks of the session <br />
-	7. number of popular items clicked in the session  <br />
-	8. time spent in sec <br />
-	9. month of the year of the session first click <br />
-	10. Average time of the session (total time spent / number of clicks) <br /> <br />
+	Some of the Features extracted are  <br />
+	1 . buy/click ratio of the session <br />
+	2 . number of clicks in the session <br />
+	3 . day of the week of the session first click <br />
+	4 . hour of the day of the session first click <br />
+	5 . number of clicks made on the maximum clicked item of the session <br />
+	6 . max time between two consecutive clicks of the session <br />
+	7 . number of popular items clicked in the session  <br />
+	8 . time spent in sec <br />
+	9 . month of the year of the session first click <br />
+	10 . Average time of the session (total time spent / number of clicks) <br /> <br />
 
 Plots :
 	Plots for above features are put in this folder . Importance of feature can be described here .
