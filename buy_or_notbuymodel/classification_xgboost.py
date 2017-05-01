@@ -20,7 +20,7 @@ for i in range(0 , max_length):
 	x.append(l)
 
 
-"""
+
 counter = 0
 fle = open("final_data/session_buy_click_ratio.txt" , "r")
 for line in fle:
@@ -122,7 +122,7 @@ for line in fle:
 
 #print(x)
 
-"""
+
 
 
 counter = 0
@@ -152,29 +152,20 @@ y_test  = np.asarray(y)[train_length:]
 
 		
 
-"""
+
 
 model=xgboost.XGBClassifier()
 
 model.fit(x_train,y_train)
 
-"""
+
 
 
 #print(model)
 
-P = 0
-for i in y_train:
-	if(i == 1):
-		P = P + 1
-print(P)
-P = 0
-for i in y_test:
-	if(i == 1):
-		P = P + 1
-print(P)
-"""
-"""
+
+
+
 #y_pred = model.predict(x_test)
 
 #predictions=[round(value) for value in y_pred]
@@ -182,7 +173,7 @@ print(P)
 #accuracy = accuracy_score(y_test, predictions)
 counter = 0
 
-"""
+
 S = 0
 N = 0
 O = 0
@@ -199,7 +190,7 @@ print(O , S ,N)
 accuracy = float(S)/float(S + N)
 
 print(accuracy)
-"""
+
 
 
 
