@@ -51,7 +51,7 @@ Item-to-item matrix factorization
 
 	(i,j)th entry of the matrix stores the (number of sessions in which j is bought among the sessions in which (i, j) are clicked)/(number of sessions in which i and j are clicked together)
 
-	Score of  i-item in a session = sum of (i , j) score for all j clicked in the session 
+	Score of  i-item in a session = sum of (j , i) score for all j clicked in the session 
 
 	Popularity of items based on buy/click ratio in the whole data and used the data to predict item .
 
