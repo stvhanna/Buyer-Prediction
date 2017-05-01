@@ -7,33 +7,35 @@ Problem :
 
 The training data comprises two different files:
 
-yoochoose-clicks.dat - Click events. Each record/line in the file has the following fields:
-	Session ID – the id of the session. In one session there are one or many clicks.
-	Timestamp – the time when the click occurred.
-	Item ID – the unique identifier of the item.
-	Category – the category of the item.
-yoochoose-buys.dat - Buy events. Each record/line in the file has the following fields:
-	Session ID - the id of the session. In one session there are one or many buying events.
-	Timestamp - the time when the buy occurred.
-	Item ID – the unique identifier of item.
-	Price – the price of the item.
-	Quantity – how many of this item were bought.
+yoochoose-clicks.dat - 
+	Click events. Each record/line in the file has the following fields:
+	Session ID – the id of the session. In one session there are one or many clicks. <br />
+	Timestamp – the time when the click occurred. <br />
+	Item ID – the unique identifier of the item. <br />
+	Category – the category of the item. <br />
+yoochoose-buys.dat - Buy events. 
+	Each record/line in the file has the following fields:
+	Session ID - the id of the session. In one session there are one or many buying events. <br />
+	Timestamp - the time when the buy occurred. <br />
+	Item ID – the unique identifier of item. <br />
+	Price – the price of the item. <br />
+	Quantity – how many of this item were bought. <br />
 The Session ID in yoochoose-buys.dat will always exist in the yoochoose-clicks.dat file – the records with the same Session ID together form the sequence of click events of a certain user during the session. The session could be short (few minutes) or very long (few hours), it could have one click or hundreds of clicks. All depends on the activity of the user.
 
 
 data_extraction:
 	We used Hadoop-MapReduce to get following information from the data .
-	Some of the Features extracted are 
-	1. buy/click ratio of the session
-	2. number of clicks in the session
-	3. day of the week of the session first click
-	4. hour of the day of the session first click
-	5. number of clicks made on the maximum clicked item of the session
-	6. max time between two consecutive clicks of the session
-	7. number of popular items clicked in the session 
-	8. time spent in sec
-	9. month of the year of the session first click
-	10. Average time of the session (total time spent / number of clicks)
+	Some of the Features extracted are  <br />
+	1 . buy/click ratio of the session <br />
+	2 . number of clicks in the session <br />
+	3 . day of the week of the session first click <br />
+	4 . hour of the day of the session first click <br />
+	5 . number of clicks made on the maximum clicked item of the session <br />
+	6 . max time between two consecutive clicks of the session <br />
+	7 . number of popular items clicked in the session  <br />
+	8 . time spent in sec <br />
+	9 . month of the year of the session first click <br />
+	10 . Average time of the session (total time spent / number of clicks) <br /> <br />
 
 Plots :
 	Plots for above features are put in this folder . Importance of feature can be described here .
@@ -51,7 +53,7 @@ Item-to-item matrix factorization
 
 	(i,j)th entry of the matrix stores the (number of sessions in which j is bought among the sessions in which (i, j) are clicked)/(number of sessions in which i and j are clicked together)
 
-	Score of  i-item in a session = sum of (i , j) score for all j clicked in the session 
+	Score of  i-item in a session = sum of (j , i) score for all j clicked in the session 
 
 	Popularity of items based on buy/click ratio in the whole data and used the data to predict item .
 
